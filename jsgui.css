@@ -1,0 +1,595 @@
+body {
+    background: #cde;
+    color: #000;
+    font-family: "Arial";
+    font-size: 10px;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+h1 {
+    font-size: 1em;
+    height: 1em;
+    margin: -2.2em 0px 0px;
+    padding: 0px;
+}
+p {
+    font-size: 1.2em;
+}
+.box {
+    background: #ccc;
+    border-radius: 1em 0px 0px 0px;
+    box-shadow: 0px 0.4em 0.8em rgba(0, 0, 64, 0.5);
+    color: #000;
+    left: 5em;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 10em;
+    z-index: 10;
+}
+.box .buttons {
+    margin: 0px;
+}
+.box button {
+    background: #cfc;
+    border-color: #030;
+    border-radius: 0.9em;
+    border-style: solid;
+    border-width: 0.05em;
+    box-shadow: 0.05em 0.05em 0.2em rgba(0, 0, 64, 0.5);
+    color: #060;
+    display: block;
+    float: right;
+    font-family: 'Arial Unicode MS', 'Arial', 'Lucida Console', 'Trebuchet MS';
+    font-size: 1.75em;
+    height: 1.15em;
+    padding: 0px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 1.15em;
+    z-index: 7;
+}
+.box button span {
+    display: block;
+    margin: -.2em 0px 0px;
+}
+.box button:hover {
+    background: #6f6;
+    cursor: pointer;
+}
+.box button.resize {
+    border-radius: 0px;
+    border-width: 0.05em;
+    box-shadow: none;
+    cursor: se-resize;
+    font-size: 1.667em;
+    font-weight: normal;
+    height: 0.8em;
+    line-height: 0.5em;
+    margin: -.85em 0px 0px;
+    position: absolute;
+    right: 0.05em;
+    top: 100%;
+    width: 0.85em;
+}
+.box button.resize span {
+    margin-left: -.125em;
+}
+.box button.close {
+    background: #fcc;
+    border-color: #600;
+    color: #600;
+    margin: 0.25em 1.2em 0px 0px;
+}
+.box button.close:hover {
+    background: #f66;
+    border-color: #900;
+    color: #900;
+}
+.box button.maximize {
+    margin: 0.25em 2.6em 0px 0px;
+}
+.box button.minimize {
+    background: #ccf;
+    border-color: #006;
+    color: #006;
+    margin: 0.25em 4em 0px 0px;
+}
+.box button.minimize:hover {
+    background: #66f;
+}
+.box h3.gui-heading {
+    background: #eef;
+    border-color: #006;
+    border-radius: 1em 0px 0px 0px;
+    border-style: none solid solid none;
+    border-width: 0px 0.1em 0.1em 0px;
+    cursor: move;
+    float: none;
+    font-size: 1em;
+    height: 3em;
+    margin: 0.1em 0.1em -3.2em 0.1em;
+    position: relative;
+    width: 65.7em;
+    z-index: 6;
+}
+.box h3.gui-heading:hover {
+    background: #ccf;
+}
+.box h3.gui-heading span {
+    display: block;
+    font-size: 1.8em;
+    padding: 0.25em 0px 0px 0.5em;
+}
+.box .gui-body {
+    border: 0.1em solid #006;
+    display: block;
+    margin-top: -.1em;
+    overflow: scroll;
+    position: relative;
+    z-index: 4;
+}
+.box .gui-body button {
+    display: inline-block;
+    height: auto;
+    padding: 0px 0.25em;
+    position: static;
+    width: auto;
+}
+.box div.gui-body {
+    background: #a8b8c8;
+    border-radius: 1em 0px 0px 0px;
+    box-shadow: 0px 1em 2em rgba(0, 0, 64, 0.25);
+    height: 25em;
+    padding: 4.25em 1.6em 1.6em 1em;
+    white-space: nowrap;
+    width: 74.4em;
+}
+.box textarea.gui-body {
+    background: #fff;
+    box-shadow: 0px 0.8em 1.6em rgba(0, 0, 64, 0.25);
+    height: 21.28em;
+    margin-top: 2.5em;
+    padding: 0px 0px 0px 0.8em;
+    white-space: pre;
+    width: 60.8em;
+}
+.box label.sub-heading {
+    background: #ccc;
+    border: 0.1em solid #003;
+    border-radius: 1em 0px 0px 0px;
+    height: 3em;
+    left: 0px;
+    overflow: hidden;
+    padding-left: 1em;
+    position: absolute;
+    right: 0px;
+    white-space: nowrap;
+    z-index: 5;
+}
+#register .gui-body p {
+    clear: both;
+}
+#register-wizard-block p label {
+    display: block;
+    float: left;
+    width: 20em;
+}
+#register-wizard-block p input,
+#register-wizard-block p textarea {
+    display: block;
+    float: left;
+    margin-bottom: 1em;
+    width: 25em;
+}
+#register-wizard-block p input {
+    height: 1.25em;
+}
+#register-wizard-block p input.checkbox {
+    width: auto;
+}
+#register-wizard-block p textarea {
+    height: 5em;
+}
+#register-json-block p label {
+    display: block;
+}
+#register-json-block textarea {
+    height: 9em;
+    width: 50em;
+}
+#register .gui-body>p span {
+    display: block;
+    float: left;
+    margin-bottom: 1.5em;
+    width: 20em;
+}
+#appmenu {
+    background: #fff;
+    border-left: 0.1em solid #333;
+    border-right: 0.1em solid #333;
+    border-top: 0.1em solid #333;
+    box-shadow: 0px 0.5em 1em rgba(0, 0, 64, 0.5);
+    display: none;
+    left: 1em;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: -1.5em;
+    width: 30em;
+}
+#appmenu li {
+    background: #eee;
+    border-bottom: 0.1em solid #333;
+    cursor: default;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-style: italic;
+    list-style: none;
+    margin: 0px;
+    padding: 1em;
+    position: relative;
+    text-align: right;
+}
+#appmenu li.appmenu-app {
+    background: #cfc;
+    color: #060;
+    padding-bottom: 0px;
+}
+#appmenu li.appmenu-man {
+    background: #ccf;
+    color: #006;
+}
+#appmenu li.appmenu-res {
+    background: #fcc;
+    color: #600;
+}
+#appmenu ul {
+    margin: 0px;
+    padding: 0px;
+}
+#appmenu li.appmenu-app ul {
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-top: 0.1em solid #060;
+    color: #060;
+    display: block;
+    margin-top: 1em;
+    position: static;
+}
+#appmenu li.appmenu-app li {
+    color: #030;
+    width: auto;
+}
+#appmenu li.appmenu-man li {
+    color: #006;
+}
+#appmenu li.appmenu-res li {
+    color: #600;
+}
+#appmenu li ul {
+    border: 0.1em solid #333;
+    box-shadow: 0px 0.5em 1em rgba(0, 0, 64, 0.5);
+    display: none;
+    left: 26em;
+    margin: 0px -1em;
+    padding: 0px 1em;
+    position: absolute;
+    top: -.08em;
+    width: inherit;
+}
+#appmenu li li {
+    background: #fff;
+    border-color: #fff;
+    border-style: solid none;
+    border-width: 0.1em;
+    color: #000;
+    cursor: pointer;
+    font-style: normal;
+    list-style: inside disc;
+    margin: 0px -.85em;
+    position: static;
+    text-align: left;
+    width: 23em;
+}
+#appmenu li li:hover {
+    background: #eee;
+}
+#appmenu .appmenu-app li:hover {
+    background: #efe;
+    border-color: #0c0;
+}
+#appmenu .appmenu-man li:hover {
+    background: #eef;
+    border-color: #00c;
+}
+#appmenu .appmenu-res li:hover {
+    background: #fee;
+    border-color: #c00;
+}
+#stylizer label.sub-heading {
+    border-radius: 0.8em 0px 0px 0px;
+    font-size: 1.6em;
+    height: auto;
+    padding: 2.32em 1em 0.35em;
+}
+#stylizer textarea.gui-body {
+    margin-top: 5em;
+}
+#license .gui-disabled,
+.box .gui-disabled {
+    background: #999;
+    border-radius: 1em 0px 0px 0px;
+    display: block;
+    height: 100%;
+    left: 0px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 9;
+}
+#license .gui-disabled {
+    background: #666;
+    opacity: 0.7;
+}
+#unsupported {
+    color: #c00;
+    font-size: 2em;
+    font-weight: bold;
+}
+#dashboard {
+    background: #cde repeat;
+    height: 1100em;
+    overflow: hidden;
+    padding: 1em;
+}
+#dashboard h2 {
+    color: #321;
+    float: right;
+    font-size: 6em;
+    font-style: italic;
+    margin: 0.25em 3.5em 0px 0px;
+    opacity: 0.25;
+}
+#panelbar {
+    background: #ccc;
+    border-bottom: 0.1em solid #456;
+    border-top: 0.1em solid #456;
+    bottom: 0px;
+    min-height: 2.9em;
+    position: absolute;
+    width: 100%;
+}
+#panelbar h2 {
+    color: #777;
+    font-style: italic;
+    margin: 0.25em 1.5em 0.25em 0px;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+}
+#panellist {
+    margin: 0.2em;
+    padding: 0px;
+    position: relative;
+    z-index: 2;
+}
+#panellist li {
+    background: #ddd;
+    border: 0.2em outset #aaa;
+    box-shadow: -.1em -.1em 0px rgba(246, 246, 246, 100);
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 1.3em;
+    list-style: none;
+    margin: 0px 0.1em 0.25em;
+    overflow: hidden;
+    padding: 0.2em 0.4em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 6em;
+}
+#panellist li.active {
+    background: #eee;
+    border-style: inset;
+    box-shadow: 0.1em 0.1em 0px rgba(246, 246, 246, 100);
+}
+#console-shell {
+    background: #456;
+    border: 0.25 ridge #999;
+    border-left: 0.1em solid #123;
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20em;
+}
+#console-shell h2 {
+    background: #666;
+    border-bottom: 0.1em solid #333;
+    font-style: italic;
+    margin: 0px;
+    padding: 0.5em;
+    text-align: right;
+}
+#console-shell h2 button {
+    float: left;
+    margin: 0px 0.25em 0.25em 0px;
+}
+#console {
+    margin: 0px;
+    overflow: scroll;
+    padding: 1em 1em 1em 1.5em;
+}
+#console li {
+    border-bottom: 0.1em solid #789;
+    color: #def;
+    font-family: monospace;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.25em;
+}
+#license {
+    font-family: monospace;
+    height: 100%;
+    width: 100%;
+}
+#license-body {
+    background: #ffc;
+    border: 0.2em solid #cc3;
+    height: 35em;
+    left: 1em;
+    padding: 2em;
+    position: absolute;
+    top: 1em;
+    width: 55em;
+    z-index: 1000;
+}
+#license-affirm {
+    color: #c00;
+    font-weight: bold;
+    margin-top: 2em;
+}
+p.resetgui,
+form.resetgui {
+    display: static;
+    font-size: 1.6em;
+}
+form.resetgui li {
+    background: #fff;
+    border: 0.08em solid #000;
+    float: left;
+    font-size: 1.6em;
+    font-weight: bold;
+    list-style: none;
+    margin-right: 3em;
+    padding: 0.25em;
+    text-align: left;
+    width: 7em;
+}
+form.resetgui li label {
+    display: inline-block;
+    width: 5.5em;
+}
+form.resetgui li.delete {
+    color: #c00;
+}
+form.resetgui li.cancel {
+    color: #0c0;
+}
+form.resetgui,
+form.resetgui p {
+    font-size: 1em;
+    text-align: center;
+}
+form.resetgui button {
+    border-width: 0.1em;
+    display: inline-block;
+    float: none;
+    height: auto;
+    padding: 0px 0.5em;
+    position: static;
+    width: auto;
+}
+.fileBrowser .gui-body form {
+    margin: -1.2em -1.6em 0px -1em;
+}
+.fileBrowser .gui-body span {
+    left: -300em;
+    position: absolute;
+}
+.fileBrowser .gui-body input {
+    border-color: #006;
+    border-style: solid;
+    border-width: 0.1em 0px 0px;
+    float: left;
+    font-size: 1.25em;
+    margin-top: -.05em;
+    width: 100%;
+}
+.fileBrowser .gui-body iframe {
+    background: #666;
+    border-color: #006;
+    border-style: solid;
+    border-width: 0.1em 0px 0px;
+    clear: both;
+    display: block;
+    height: 24.4em;
+    margin: -1em -1em -20em;
+    overflow: scroll;
+    position: relative;
+    top: -.1em;
+    width: 75.4em;
+}
+.regex .gui-body label {
+    display: block;
+}
+.regex .gui-body input,
+.regex .gui-body textarea {
+    font-family: monospace;
+}
+.regex .gui-body textarea {
+    width: 100%;
+}
+.regex .gui-body p span {
+    display: block;
+    float: left;
+}
+.regex .gui-body p span.clear {
+    clear: both;
+    display: block;
+    float: none;
+    height: 0px;
+    width: 0px;
+}
+.regex .gui-body p span.bound {
+    font-size: 1.5em;
+    padding: 1em 0.222em 0px;
+}
+.regex .gui-body p.string {
+    clear: both;
+    float: none;
+    margin: 0px;
+}
+.regex .gui-body .switch input {
+    width: 2em;
+}
+.regex .gui-body .pattern input {
+    display: inline-block;
+    width: 48em;
+}
+.regex .gui-body .output {
+    background: #fff;
+    font-family: monospace;
+    font-size: 2em;
+    height: auto;
+    margin-bottom: 0px;
+    white-space: pre-line;
+    width: auto;
+}
+.regex .gui-body .output em {
+    background: #def;
+    border: 0.05em solid #f00;
+    color: #f00;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0px -.05em;
+}
+.regex .gui-body .output span {
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0.75em;
+    margin-bottom: 1em;
+}
+.regex .regex-input {
+    margin-top: 0px;
+}
